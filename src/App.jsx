@@ -10,7 +10,7 @@ export default function App() {
     ];
 
     const [currentImage, setCurrentImage] = useState(images[0]);
-    const [bright, setBright] = useState(true);
+    const [bright, setBright] = useState(false);
 
     const displayImage = (image) => {
         setCurrentImage(image);
@@ -21,7 +21,7 @@ export default function App() {
     }
 
     const checkLight = bright ? 'light' : 'dark'
-    const buttonText = bright ? 'darken' : 'lighten'
+    const buttonText = bright ?  'lighten': 'darken'
     return (
         <>
             <h1>Image gallery example</h1>
